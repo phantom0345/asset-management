@@ -1,0 +1,154 @@
+
+
+.maintenance-container {
+    display: flex;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #2d3e50;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sidebar button {
+    background-color: #4a6583;
+    color: white;
+    border: none;
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar button:hover {
+    background-color: #3a4d6a;
+  }
+  
+  .sidebar button.active {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f5f7fa;
+    border-left: 1px solid #e0e0e0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2d3e50;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-asset-form,
+  .display-assets,
+  .service-suggestion {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button[type="button"] {
+    width: 100%;
+    background-color: #ff9800;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #fb8c00;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  table th {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .red-text {
+    color: #e53935;
+    font-weight: bold;
+  }
+  
+  .action-btn {
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .delete-btn {
+    background-color: #e53935;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .extend-btn {
+    background-color: #4caf50;
+  }
+  
+  .extend-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  .note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 15px;
+  }
+  

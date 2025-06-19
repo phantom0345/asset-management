@@ -1,0 +1,105 @@
+.asset-management-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f4fc;
+    font-family: Arial, sans-serif;
+  }
+  
+ 
+  .sidebar {
+    width: 20%;
+    background-color: #d9e7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-right: 1px solid #ccc;
+  }
+  
+  .sidebar button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #e7f1ff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .sidebar button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .sidebar button:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .add-asset-form,
+  .display-assets {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-asset-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .add-asset-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .add-asset-form input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-asset-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-asset-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .display-assets table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .display-assets th,
+  .display-assets td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .display-assets th {
+    background-color: #f8f9fc;
+  }
+  

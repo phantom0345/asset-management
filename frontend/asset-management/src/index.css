@@ -1,0 +1,52 @@
+/* Navbar Container */
+.custom-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Navbar Links */
+.custom-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for navbar links */
+.custom-link:hover {
+  background: linear-gradient(135deg, #ffae00, #ff5e6c);
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Search Button Styling */
+.btn-outline-success {
+  color: #333;
+  border-color: #ddd;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background: #ff5e6c;
+  color: #fff;
+  border-color: #ff5e6c;
+}
+
+/* Navbar Toggler Icon */
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%288, 8, 8, 0.8%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin: 0.5rem 0;
+  }
+}

@@ -1,0 +1,38 @@
+.custom-navbar {
+    background-color: #f0f4fa; 
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .custom-brand {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .custom-nav-link {
+    color: #3f51b5;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-nav-link:hover {
+    color: #ff4081;
+  }
+  
+  .custom-search-btn {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+  }
+  
+  .custom-search-btn:hover {
+    background-color: #ff6281;
+  }
+  
+  .navbar-nav .nav-item {
+    display: inline-block;
+    padding: 10px;
+  }
+  

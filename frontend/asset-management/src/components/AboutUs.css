@@ -1,0 +1,69 @@
+/* General container styling */
+.aboutus-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* About us information section */
+  .aboutus-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aboutus-info h1 {
+    margin-bottom: 10px;
+  }
+  
+  .aboutus-info p {
+    line-height: 1.6;
+  }
+  
+  .aboutus-info ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  /* Developer profiles section */
+  .developer-section {
+    text-align: center;
+  }
+  
+  .developer-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .developer-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .developer-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+  }
+  
+  .developer-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .developer-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  
+  .developer-card p {
+    color: #666;
+  }
+  
