@@ -6,7 +6,7 @@ const { ObjectId } = require("mongodb"); // make sure correct path
 // Add new asset
 router.post("/add", async (req, res) => {
   try {
-    console.log("📥 Received asset data:", req.body);
+    console.log("Received asset data:", req.body);
 
     // Validate request body
     const { assetName, assetType, assetModelId, dealer, warrantyDate, repairSentDate } = req.body;
@@ -25,15 +25,15 @@ router.post("/add", async (req, res) => {
 
     const savedAsset = await newAsset.save();
 
-    console.log("✅ Asset saved:", savedAsset);
-    res.status(201).json({ message: "✅ Asset service added successfully!", asset: savedAsset });
+    console.log("Asset saved:", savedAsset);
+    res.status(201).json({ message: "Asset service added successfully!", asset: savedAsset });
 
   } catch (error) {
-    console.error("❌ Error adding asset:", error);
+    console.error("Error adding asset:", error);
     if (error.code === 11000) {
-      res.status(409).json({ error: "❗ Duplicate assetName detected.", details: error.keyValue });
+      res.status(409).json({ error: "Duplicate assetName detected.", details: error.keyValue });
     } else {
-      res.status(500).json({ error: "❌ Failed to add asset", details: error.message });
+      res.status(500).json({ error: "Failed to add asset", details: error.message });
     }
   }
 });
@@ -51,7 +51,7 @@ router.delete("/model/:assetModelId", async (req, res) => {
 
     res.status(200).json({ message: "Asset deleted based on assetModelId" });
   } catch (err) {
-    console.error("❌ Error deleting asset by assetModelId:", err);
+    console.error("Error deleting asset by assetModelId:", err);
     res.status(500).send("Server error");
   }
 });
@@ -86,7 +86,7 @@ router.get("/newassetservice", async (req, res) => {
     res.status(200).json(enrichedAssets);
    
   } catch (error) {
-    console.error("❌ Error in GET /assetservice:", error);
+    console.error("Error in GET /assetservice:", error);
     res.status(500).json({ error: "Failed to fetch asset data" });
   }
 });
