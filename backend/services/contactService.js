@@ -5,13 +5,13 @@ const createContact = async (name, email, address, helpRequest) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "raviprakashreddy_kontham@srmap.edu.in",
+        user: "yaswanthsai_mannem@srmap.edu.in",
         pass: "vmsmgszdzqmifgwx",
       },
     });
     
     const mailOptions = {
-      from: "raviprakashreddy_kontham@srmap.edu.in",
+      from: "yaswanthsai_mannem@srmap.edu.in",
       to: email,
       subject: "regarding the order from srm university!",
       text: `Hello ${name},deliver to this address:"${address}",\n\nWe have received your message: "${helpRequest}"\n\nWe'll get back to you shortly.`,
